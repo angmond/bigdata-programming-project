@@ -83,7 +83,7 @@ CommerceInfor2['huboid'] = huboidlist
 
 df3 = pd.DataFrame(CommerceInfor2)
 
-# 선거공약 정보 받아오기ㅇ
+# 선거공약 정보 받아오기
 CommerceInfor3 = {}
 
 # sgIdlist3 = []
