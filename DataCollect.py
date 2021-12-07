@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup as bs
 import json
 from datetime import datetime
 
-# 이 코드는 api로부터 필요한 데이터를 수집 및 전처리하는 코드이다.
+# 이 코드는 api로부터 필요한 데이터를 수집 및 전처리하는 코드이다.ㅇㅇ
 
 # 선거id와 선거코드 정보 받아오기
 pageNo = 1
