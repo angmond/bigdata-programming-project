@@ -1,7 +1,8 @@
+# 강의자료 WordCount.py 참고
 from mrjob.job import MRJob
 import re
 
-WORD_RE = re.compile(r"[가-힣]+", re.UNICODE)
+WORD_RE = re.compile(r"[가-힣]+")
 
 class MRWordFreqCount(MRJob):
     def mapper(self, _, line):
