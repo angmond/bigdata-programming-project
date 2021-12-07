@@ -15,7 +15,7 @@ sgTypecodelist = []
 
 while pageNo <= 5:
     url = 'http://apis.data.go.kr/9760000/CommonCodeService/getCommonSgCodeList'
-    params ={'serviceKey' : 'bo4dFD5qhhCvIQ1sMO1ndtNoCUDdckjaC/17d86hvDPd7A/dnrYSqZyQOyclE0ogkwZy3pDGPdnZVC47xnZZoA==',
+    params ={'serviceKey' : '서비스키',
              'pageNo' : pageNo, 'numOfRows' : '10' }
     
     response = requests.get(url, params=params)
@@ -59,7 +59,7 @@ for i in range(len(df2)):
     sgTypecode = df2.iloc[i]['sgTypecode']
 
     url = 'http://apis.data.go.kr/9760000/WinnerInfoInqireService2/getWinnerInfoInqire'
-    params ={'serviceKey' : 'bo4dFD5qhhCvIQ1sMO1ndtNoCUDdckjaC/17d86hvDPd7A/dnrYSqZyQOyclE0ogkwZy3pDGPdnZVC47xnZZoA==',
+    params ={'serviceKey' : '서비스키',
              'pageNo' : '1', 'numOfRows' : '10', 'sgId' : sgId, 'sgTypecode' : sgTypecode}
     
     response = requests.get(url, params=params)
@@ -98,7 +98,7 @@ for i in range(len(df3)):
     huboid = df3.iloc[i]['huboid']
     
     url = 'http://apis.data.go.kr/9760000/ElecPrmsInfoInqireService/getCnddtElecPrmsInfoInqire'
-    params ={'serviceKey' : 'bo4dFD5qhhCvIQ1sMO1ndtNoCUDdckjaC/17d86hvDPd7A/dnrYSqZyQOyclE0ogkwZy3pDGPdnZVC47xnZZoA==',
+    params ={'serviceKey' : '서비스키',
              'pageNo' : '1', 'numOfRows' : '10', 'sgId' : sgId2, 'sgTypecode' : sgTypecode2, 'cnddtId' : huboid }
     
     response = requests.get(url, params=params)
